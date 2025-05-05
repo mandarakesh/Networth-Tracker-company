@@ -65,7 +65,7 @@ json
 
 ### Add Customer 
 
-`POST /api/customers`
+`POST /customers`
 
 json
 {
@@ -83,7 +83,7 @@ json
 
 ### Get All Customers *(Require JWT Token)*
 
-`GET /api/customers`
+`GET /customers`
 
 json
 [
@@ -93,7 +93,7 @@ json
 
 ### Update Customer *(Require JWT Token)*
 
-`PUT /api/customers/:id`
+`PUT /customers/:id`
 
 json
 {
@@ -110,7 +110,7 @@ json
 
 ### Delete Customer *(Require JWT Token)*
 
-`DELETE /api/customers/:id`
+`DELETE /customers/:id`
 json
 { "message": "Customer deleted" }
 
@@ -141,7 +141,7 @@ json
 
 ### Get Loans
 
-`GET /api/loans`
+`GET /loans`
 
 json
 [
@@ -151,7 +151,7 @@ json
 
 ### Record Repayment
 
-`POST /api/loans/:id/repay`
+`POST /loans/:id/repay`
 
 json
 {
@@ -166,7 +166,7 @@ json
 
 ### Get Summary
 
-`GET /api/loans/summary`
+`GET /loans/summary`
 
 json
 {
@@ -177,7 +177,7 @@ json
 
 ### Get Overdue Loans
 
-`GET /api/loans/overdue`
+`GET /loans/overdue`
 
 
 json
