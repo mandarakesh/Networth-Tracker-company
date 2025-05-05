@@ -7,7 +7,6 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
 
-// Sample route
 app.get("/", (req, res) => res.send("CrediKhaata API Running"));
 
 app.use("/api/auth", require("./routes/auth"));

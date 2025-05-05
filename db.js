@@ -7,7 +7,7 @@ let db;
 async function connectToDb() {
   try {
     await client.connect();
-    db = client.db("users"); // default DB from URI
+    db = client.db("users"); 
     console.log("Connected to MongoDB");
   } catch (err) {
     console.error("MongoDB connection failed:", err);
