@@ -43,8 +43,7 @@ router.post("/:id/repay", async (req, res) => {
 
   const newBalance = loan.balance - amount;
   const status = newBalance <= 0 ? "paid" : loan.status;
-  if(newBalance>0){
-
+  if (loan.balance > 0) {
     await db.collection("loans").updateOne(
       { _id: loan._id },
       {
@@ -52,10 +51,10 @@ router.post("/:id/repay", async (req, res) => {
         $set: { balance: newBalance, status },
       }
     );
-    
+
     res.json({ message: "Repayment recorded" });
-  }else{
-    res.send("Loan already paid")
+  } else {
+    res.send("Loan already paid");
   }
 });
 
