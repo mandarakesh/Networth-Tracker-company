@@ -143,8 +143,6 @@ json
 
 `GET /api/loans`
 
-* Optional Query: `?status=pending|paid|overdue`
-
 json
 [
   { "_id": "...", "amount": 2000, "status": "pending", ... }
